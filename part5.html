@@ -57,7 +57,28 @@
 <div class="outer-container">
     <div class="inner-container">
         <div class="centered-content">
-            
+            Now the database is migrated. and wp synchros work is done. next up is explaination of trick 1
+            and trick 2.
+
+            trick1 - (in few words) merge the site 2 and site 1 folders to create final site 2 folder.
+            (In More Detail)  Here is the important part Site 2 which is new installed will lose its connections to its database and stop working if you copy the site 1 folder over site 2 folder and replace files.  So instead of merging this way do the reverse.  Follow these steps -
+            Step 1  - Compress with Rar extension the folders of site 1 and site 2. Copy both rar files to two  New Folders on Desktop. site1.rar in NewFolder1 and site2.rar in NewFolder2.
+            Step 2 - Do extract here with both rar files.
+            Step 3 - Rename Both Extracted Folders. New Name for both is same. Call them both - 'Mix'
+            Step 4 - Copy Mix folder within NewFolder2 and Paste it ( with replace files ) over Mix folder within NewFolder1.
+            Step 5 - Now you can delete NewFolder2 and its contents. Its of no use.
+            Step 6. Rename the Mix folder ( That lies within New Folder1)  to exactly the name of site2 folder e.g. change the name of mix folder to backupsumit
+            Step 7. Go to WWW of localhost and delete the site2 folder ( e.g backupsumit ) from there.
+            Step 8. Copy site2 folder ( e.g backupsumit ) from NewFolder1 in desktop to WWW folder in local host.
+            Thats it you are done. Files are replaced at this stage but the site needs trick 2 because the pages have lost their formatting.
+
+
+            Trick2 - (in reasonable detail) login to site 2 delete all pages ( created by you in site 1) . Warning even after you deleted the pages they lie in trash. You Must delete them from Trash otherwise next part wont work . Activate all plugins ( added by you in site 1 ) go to site 1 use wordpress export tool to export pages to xml file. Go to site 2 , import this xml file. When you deleted the pages in site 2 the menu was lost.
+            Go to customize > Menu section . Add the imported Pages to Menu in same sequnce
+
+            [ why trick2 is done - if you don't do this the pages you built using a page builder like beaver page builder lose their formatting. the only way to restore their formatting is . First delete the pages. activate the plugins (like beaver) and then import the pages from original site. ]
+
+
         </div>
     </div>
 </div>

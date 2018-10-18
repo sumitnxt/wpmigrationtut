@@ -57,7 +57,32 @@
 <div class="outer-container">
     <div class="inner-container">
         <div class="centered-content">
-            
+            The word trick is used .. mainly because it came as an idea to me  and it worked. and secondly because i can forget it and so creating this tutorial will save it for future.
+
+            1. wp synchro is a free plugin with upgrade option. the free plugin migrates the database . the upgrade is for migrating files . we don't need the upgrad because the trick 1 and trick 2 will take care of that.
+
+            Now lets begin the Migration procedure in detail -
+            prerequisite is you have original site that you want to clone on localhost with another site name.
+
+            lets for ease call them site1 ( original , present ) and site2 ( clone, to be created )
+
+            step 1 - do normal new wordpress installation on site2 and login to site2.
+            step 2 - install wp synchro plugin on site1 and site2.
+            step 3 - in wp synchro settings select push option one of the sites and pull option on the other after reading what push and pull option means. then save settings.
+            step 4 - copy general key of site 1 and go to site 2 . paste this key at appropriate place in site 2 . and proceed . while following procedure don't forget to check the url of site1 and site2 in the setting that changes the database.
+
+            url of site1 e.g http://localhost/sumit-site/
+            url of site2 e.g http://localhost/backupsumit/
+
+            Go forward. you will see progress indicator page . after seeing process completed successfully
+            wait for wordpress login box to appear on its own. Remember you are at site2 and this login box appears because the wordpress password of site2 is not changed to wordpress password of site1.
+
+            login once and then logout.
+
+
+
+
+
         </div>
     </div>
 </div>
